@@ -1,16 +1,13 @@
 extern  crate rand;
-use rand::{thread_rng, Rng};
+use rand::{Rng};
 fn main() {
 
     println!("Win 95 product key generator by Exodow_RGB");
-    let mut xxx = rand::thread_rng().gen_range(100..366);
-    let mut yy = rand::thread_rng().gen_range(95..99);
-    let mut sa = rand::thread_rng().gen_range(0..9);
-    let mut sb = rand::thread_rng().gen_range(0..9);
-    let mut sc = rand::thread_rng().gen_range(0..9);
-    let mut sd = rand::thread_rng().gen_range(0..9);
-    let mut se = rand::thread_rng().gen_range(0..9);
-    let mut zzzzz = rand::thread_rng().gen_range(10000..99999);
+    let mut sa ;
+    let mut sb ;
+    let mut sc ;
+    let mut sd ;
+    let mut se ;
 
     loop {
         sa = rand::thread_rng().gen_range(0..9);
@@ -22,5 +19,5 @@ fn main() {
             break;
         }
     }
-    println!("product key: {}{}-OEM-00{}{}{}{}{}-{}",xxx,yy,sa,sb,sc,sd,se,zzzzz);
+    println!("product key: {}{}-OEM-00{}{}{}{}{}-{}",rand::thread_rng().gen_range(100..366),rand::thread_rng().gen_range(95..99),sa,sb,sc,sd,se,rand::thread_rng().gen_range(10000..99999));
 }
